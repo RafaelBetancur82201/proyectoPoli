@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.perfil{
+    width: 100%;
+    height: 37%;
+    padding-left: 1%;
+    padding-top: 1%;
+    display: flex;
+    align-items: center;
+}
+
+.perfil img{
+    width: 9vw;
+    height: 9vw;
+    background: url('../../../images/b6.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.perfil h3{
+    margin-left: 1%;
+}
+
+h1{
+    width: 100%;
+    height: 45%;
+    font-size: 8em;
+    font-family: 'fontPaCamellar';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.buscador{
+    width: 100%;
+    height: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buscador input{
+    width: 35%;
+    height: 90%;
+    border: 0px;
+    border-radius: 25px;
+    padding-left: 1%;
+    margin-right: 1%;
+    box-shadow:5px 5px 20px 1px rgba(0, 0, 0, 0.2);
+}
+
+.btn{
+    width: 5%;
+    height: 65%;
+    box-shadow:5px 5px 20px 1px rgba(0, 0, 0, 0.2);
+}
+
+.sec1{
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.graficos{
+    width: 30%;
+    height: 90%;
+    border-bottom: 2px solid #03223f;
+    border-left: 2px solid #03223f;
+}
+
+@font-face {
+    font-family: 'fontPaCamellar';
+    src: url('../../../fonts/ChocoladineDemo.ttf') format('truetype');
+}

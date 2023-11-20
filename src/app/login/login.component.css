@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+
+.sec2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    min-height: 100vh;
+    width: 50%;
+    background: url('../../../images/backG1.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.sec1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 50%;
+    
+}
+
+.form-box{
+    width: 75%;
+    height: 75vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow:5px 5px 20px 1px rgba(0, 0, 0, 0.2);
+}
+
+.title-box{
+    font-family: 'fontPaCamellar';
+    font-size: 45px;
+    color: #20473A;
+    text-align: center;
+    margin-top: 25px;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 75%;
+    border-bottom: 2px solid #03223f;
+    display: block;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    
+}
+
+.forget label{
+    margin-top: 20px;
+}
+
+.forget label input{
+    margin-right: 5px;
+    
+}
+.forget label a{
+    text-decoration: none;
+}
+.forget label a:hover{
+    text-decoration: underline;
+}
+
+#button-send-credentials{
+    width: 50%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 600;
+    box-shadow:5px 5px 20px 1px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+#button-send-credentials:hover{
+    background: #03223f;
+    color: #fff;
+}
+
+.register{
+    font-size: .9em;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register p a{
+    text-decoration: none;
+    font-weight: 600;
+}
+.register p a:hover{
+    text-decoration: underline;
+}
+
+@font-face {
+    font-family: 'fontPaCamellar';
+    src: url('../../../fonts/ChocoladineDemo.ttf') format('truetype');
+}

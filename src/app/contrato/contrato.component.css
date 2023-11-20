@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+
+.sec1{
+    width: 35%;
+    height: 100vh;
+    display: flex;
+    float: left;
+    flex-wrap: wrap;
+}
+
+.sec2{
+    width: 65%;
+    height: 100vh;
+    display: flex;
+    float: left;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profilePhoto{
+    width: 12vw;
+    height: 12vw;
+    background: url('../../../images/b6.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.profileTitle{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-family: 'poppins',sans-serif;
+}
+
+.profileDescription{
+    width: 100%;
+    height: 60vh;
+}
+
+.profileDescription p{
+    width: 100%;
+    height: 10vh;
+    font-size: 1.5vw;
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+}
+
+.clasificacion{
+    width: 100%;
+    height: 34vh;
+    font-size: 1.3em;
+    font-family: 'poppins',sans-serif;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.clasificacion p{
+    width: 100%;
+    height: 25vh;
+    font-size: 6em;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.trabajo{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+    align-content: center;
+}
+
+.trabajo h1{
+    width: 100%;
+}
+
+.habilidades{
+    width: 20%;
+    height: 20%;
+    margin: 1%;
+    box-shadow:5px 5px 20px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+.experiencia{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;  
+}
+
+.experiencia h1{
+    width: 100%;
+}
+
+.experiencia p{
+    width: 90%;
+    padding: 5%;
+    margin: 0 auto;
+    border: 1px solid rgb(189, 189, 189);
+    box-shadow:5px 5px 20px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.contacto{
+    width: 100%;
+    height: 20vh;
+}
+
+.contacto .btn{
+    width: 20%;
+    height: 35%;
+}

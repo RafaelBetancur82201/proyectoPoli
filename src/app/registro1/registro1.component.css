@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+
+.title{
+    position: absolute;
+    padding-top: 25px;
+    text-align: center;
+    width: 100%;
+}
+
+.sec1, .sec2{
+    display: flex;
+    width: 50%;
+    height: 100vh;
+    float: left;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.ball1, .ball2{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    margin-top: 15%;
+}
+
+.ball1, .ball2{
+    background: url('../../../images/backG1.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: width 0.5s, height 0.5s;
+    animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+.ball1:hover{
+    width: 60%;
+    height: 60%;
+    animation: ball1 1s ease 0s 1 normal forwards;
+    box-shadow:15px 15px 60px 3px rgba(0, 0, 0, 0.432);
+}
+
+.ball2:hover{
+    width: 60%;
+    height: 60%;
+    animation: ball2 1s ease 0s 1 normal forwards;
+    box-shadow:15px 15px 60px 3px rgba(0, 0, 0, 0.432);
+}
+
+.ball1 p, .ball2 p{
+    margin-top: -20%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+}
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes ball1 {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(100px);
+	}
+}
+
+@keyframes ball2 {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(-100px);
+	}
+}
+
+@font-face {
+    font-family: 'fontPaCamellar';
+    src: url('../../../fonts/ChocoladineDemo.ttf') format('truetype');
+}

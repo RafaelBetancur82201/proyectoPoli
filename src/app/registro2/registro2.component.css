@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+
+.sec1{
+    display: flex;
+    width: 95%;
+    height: 45vh;
+    float: left;
+    margin-left: 2.5%;
+}
+
+.sec2{
+    display: flex;
+    width: 95%;
+    height: 45vh;
+    float: left;
+    margin-left: 2.5%;
+}
+
+.sec3{
+    display: flex;
+    width: 95%;
+    height: 10vh;
+    float: left;
+    margin-left: 2.5%;
+}
+
+.imgPerfil{
+    width: 30%;
+    height: 100%;
+    padding-top: 15px;
+    display: flex;
+    float:left;
+    justify-content: center;
+
+}
+
+.aam1{
+    display: flex;
+    float:left;
+    width: 18vw;
+    height: 18vw;
+    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; 
+    background: url('../../../images/backG1.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;  
+}
+
+.aam1:hover{
+    width: 15vw;
+    height: 15vw;
+    background: url('../../../images/profileHover.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.asdf{
+    display: flex;
+    width: 100% ;
+    top: 2%;
+}
+.habilidadesSec1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 60%;
+    height: 100%;
+    overflow: auto;
+    flex-direction: row;
+}
+
+.habilidades{
+    width: 20%;
+    height: 20%;
+    margin: 1%;
+    box-shadow:5px 5px 20px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.continuar{
+    width: 10%;
+    height: 100%;
+}
+
+.btn{
+    width: 100%;
+    height: 15%;
+    margin-top: 90%;
+}
+
+.title{
+    width:100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    float: left;
+}
+
+.habilidadesSec2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    overflow: auto;
+    flex-direction: row;
+}
+
+.trabajos1,.trabajos2, .trabajos3, .trabajos4, .trabajos5, .trabajos6{
+    width: 15%;
+    height: 100%;
+    position: relative;
+}
+
+.trabajos1{
+    background: url('../../../images/b1.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.trabajos2{
+    background: url('../../../images/b2.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.trabajos3{
+    background: url('../../../images/b3.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.trabajos4{
+    background: url('../../../images/b4.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.trabajos5{
+    background: url('../../../images/b5.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.trabajos6{
+    background: url('../../../images/b6.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+p{
+    position: absolute;
+    bottom: 3%;
+    width: 100%;
+    font-size: 1.3em;
+    font-family: 'poppins',sans-serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 250);
+    text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Belgrano');
