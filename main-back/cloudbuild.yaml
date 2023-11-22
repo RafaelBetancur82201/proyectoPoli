@@ -1,0 +1,20 @@
+ steps:
+ # build the container image
+ - name: 'gcr.io/cloud-builders/docker'
+   args: ['build', '-t', 'gcr.io/$PROJECT_ID/[SERVICE-NAME]:$COMMIT_SHA', '.']
+ # push the container image to Container Registry
+ - name: 'gcr.io/cloud-builders/docker'
+   args: ['push', 'gcr.io/$PROJECT_ID/[SERVICE-NAME]:$COMMIT_SHA']
+ # Deploy container image to Cloud Run
+ - name: 'gcr.io/cloud-builders/gcloud'
+   args:
+   - 'chmod +x mvnw'
+   - 'run'
+   - 'deploy'
+   - 'shop-main'
+   - '--image'
+   - 'gcr.io/$PROJECT_ID/[SERVICE-NAME]:$COMMIT_SHA'
+   - '--region'
+   - 'us-central1'
+ images:
+ - 'gcr.io/$PROJECT_ID/shop-main:$COMMIT_SHA'
