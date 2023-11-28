@@ -12,6 +12,10 @@ import { IndextrabajadorComponent } from './indextrabajador/indextrabajador.comp
 import { ContratoComponent } from './contrato/contrato.component';
 import { MotorbusquedaComponent } from './motorbusqueda/motorbusqueda.component';
 
+import{HttpClientModule}from'@angular/common/http';
+import{FormsModule}from'@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +30,10 @@ import { MotorbusquedaComponent } from './motorbusqueda/motorbusqueda.component'
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

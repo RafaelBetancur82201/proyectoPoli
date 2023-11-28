@@ -1,4 +1,4 @@
-package com.example.pcamellar.utill;
+/*package com.example.pcamellar.utill;
 
 
 import com.example.pcamellar.security.entity.Rol;
@@ -20,4 +20,4 @@ public class Util implements CommandLineRunner {
         rolService.save(roladmin);
         rolService.save(roluser);
     }
-}
+}*/

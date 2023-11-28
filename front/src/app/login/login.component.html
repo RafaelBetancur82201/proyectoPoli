@@ -1,20 +1,18 @@
 <section class="sec2"></section>
 <section class="sec1">
     <div class="form-box">
-        <form action="" method="">
+        <form (ngSubmit)="onLogin()" [formGroup]="Login">
             <div class="title-box">Pa' Camellar</div>
             <div class="inputbox">
-                <input type="email" required>
-                <label for="">Correo</label>
+                <input class="form-control form-control-lg" type="email" name="mail" id="mail" placeholder="Email" formControlName="email">
             </div>
             <div class="inputbox">
-                <input type="password" required>
-                <label for="">Contraseña</label>
+                <input class="form-control form-control-lg" type="password" name="pass" id="pass" placeholder="Contraseña" formControlName="password">
             </div>
             <div class="forget">
                 <label for=""><input type="checkbox">Recordarme <a href="#">Olvidé mi contraseña</a></label>
             </div>
-            <button id="button-send-credentials">Ingresar</button>
+            <button id="button-send-credentials" type="submit" [disabled]="Login.invalid" class="btn btn btn-dark btn-block">Ingresar</button>
             <div class="register">
                 <p>¡Quiero formar parte! <a href="#">Registrarme</a></p>
             </div>
