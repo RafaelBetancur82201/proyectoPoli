@@ -15,6 +15,7 @@ import { MotorbusquedaComponent } from './motorbusqueda/motorbusqueda.component'
 import{HttpClientModule}from'@angular/common/http';
 import{FormsModule}from'@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { PaginaprincipalComponent } from './paginaprincipal/paginaprincipal.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     IndexclienteComponent,
     IndextrabajadorComponent,
     ContratoComponent,
-    MotorbusquedaComponent
+    MotorbusquedaComponent,
+    PaginaprincipalComponent
   ],
   imports: [
     BrowserModule,
