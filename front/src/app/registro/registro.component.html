@@ -1,32 +1,29 @@
 <section class="sec1">
     <div class="form-box">
-        <form action="registro1.html" method="post">
+        <form (ngSubmit)="onRegister()" [formGroup]="register">
             <div class="title-box">Pa' Camellar</div>
             <div class="inputbox">
-                <input type="text" required>
+                <input type="text" required formControlName="name">
                 <label for="">Nombres</label>
             </div>
             <div class="inputbox">
-                <input type="text" required>
+                <input type="text" required formControlName="lastname">
                 <label for="">Apellidos</label>
             </div>
             <div class="inputbox">
-                <input type="email" required>
+                <input type="email" required formControlName="email">
                 <label for="">Correo</label>
             </div>
             <div class="inputbox">
-                <input type="number" required>
-                <label for="">Telefono</label>
-            </div>
-            <div class="inputbox">
-                <input type="password" required>
+                <input type="password" required formControlName="password">
                 <label for="">Contraseña</label>
             </div>
             <div class="inputbox">
-                <input type="password" required>
+                <input type="password" required formControlName="repeatpassword">
                 <label for="">Repite la contraseña</label>
+                <p *ngIf="!passequals" class="text-danger">las contraseña no coinciden*</p>
             </div>                
-                <button id="button-send-credentials">Registrarme</button>          
+                <button id="button-send-credentials"  type="submit">Registrarme</button>          
         </form>
     </div>
 </section>
