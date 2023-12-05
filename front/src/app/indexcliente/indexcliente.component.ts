@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TokenService } from '../services/token.service.service';
 
 @Component({
   selector: 'app-indexcliente',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./indexcliente.component.css']
 })
 export class IndexclienteComponent {
+
+  constructor(private tokenservise:TokenService){}
+
+  onLogOut(): void{
+    this.tokenservise.logOut();
+    window.location.reload();
+  }
 
 }
