@@ -1,13 +1,13 @@
-package com.example.pcamellar;
+package com.micro.jobs;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ShopApiMainApplication {
+public class JobsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ShopApiMainApplication.class, args);
+		SpringApplication.run(JobsApplication.class, args);
 	}
 
 }

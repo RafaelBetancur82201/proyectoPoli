@@ -40,15 +40,9 @@ public class MainSecurity extends WebSecurityConfigurerAdapter  {
             "/swagger-ui/**",
             // -- Auth
             "/auth/**",
-            // -- Product
-            "/product/list",
-            "/product/popular",
-            "/product/detail/**",
-            "/type/list",
-            // -- ProductxSize
-            "/ProductXSIze/list/**",
-            // -- Size
-            "/size/list/**"
+            // -- jobs
+            "/jobs/getAll",
+            
     };
     // other public endpoints of your API may be appended to this array
     @Bean
