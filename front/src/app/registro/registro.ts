@@ -4,6 +4,5 @@ export interface Register {
     email:string;
     password:string;
     repeatpassword:string;
-    address:string;
     document:string;
 }

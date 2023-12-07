@@ -25,12 +25,8 @@ export class RegistroComponent implements OnInit {
       name: new FormControl('', Validators.required),
       lastname: new FormControl('', Validators.required),
       email: new FormControl('', [Validators.required, Validators.email]),
-      password: new FormControl('', [Validators.required, Validators.pattern('')]),
+      password: new FormControl('', [Validators.required]),
       repeatpassword: new FormControl('', [Validators.required]),
-      address: new FormControl('', Validators.required),
-      document: new FormControl('', Validators.required),
-      typedocument: new FormControl('', Validators.required)
-
     }
   );
 
@@ -53,7 +49,7 @@ export class RegistroComponent implements OnInit {
     }
     this.passequals = true;
     this.registeruser = new NewUser(this.register.get('name')?.value, this.register.get('lastname')?.value,
-      this.register.get('email')?.value, this.register.get('password')?.value, this.register.get('address')?.value,
+      this.register.get('email')?.value, this.register.get('password')?.value,
       this.register.get('document')?.value, this.register.get('typedocument')?.value);
     this.authservice.register(this.registeruser).subscribe({
       next:(data)=> {
@@ -63,7 +59,7 @@ export class RegistroComponent implements OnInit {
             next:()=>{
               this.isLoginFail = false;
               this.tokenservice.setToken(data.token);
-              this.router.navigate(['/']);
+              this.router.navigate(['/pag']);
             },
             error:(err)=> {
               this.errMsj = err.error.message;

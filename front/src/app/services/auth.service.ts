@@ -8,7 +8,7 @@ import { JwtDto } from '../models/jwt-dto';
   providedIn: 'root'
 })
 export class AuthService  {
-  authURL = "http://localhost:8080/auth/"
+  authURL = "http://lb-loginPrueba-1638423704.us-east-1.elb.amazonaws.com/auth/"
   constructor( private httpclient: HttpClient) { }
   public register(newuser:NewUser):Observable<any>{
     return this.httpclient.post<any>(this.authURL +'newuser', newuser);
