@@ -32,7 +32,7 @@ public class MainSecurity extends WebSecurityConfigurerAdapter  {
             "/auth/**",
             // -- jobs
             "/jobs/getAll",
-            "/jobs/"
+            "/jobs"
 
     };
     // other public endpoints of your API may be appended to this array

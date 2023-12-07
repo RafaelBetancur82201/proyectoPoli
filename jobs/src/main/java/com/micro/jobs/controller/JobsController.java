@@ -4,6 +4,7 @@ import com.micro.jobs.entity.JobEntity;
 import com.micro.jobs.service.JobsServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,6 +13,10 @@ import org.springframework.web.bind.annotation.*;
 public class JobsController {
     @Autowired
     JobsServices jobsServices;
+    @GetMapping
+    public ResponseEntity<?> get(){
+        return  new ResponseEntity<>(HttpStatus.OK);
+    }
     @QueryMapping
      public JobEntity[] getAll (){
          return jobsServices.getall();
