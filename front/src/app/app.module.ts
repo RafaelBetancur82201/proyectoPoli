@@ -16,6 +16,11 @@ import{HttpClientModule}from'@angular/common/http';
 import{FormsModule}from'@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { PaginaprincipalComponent } from './paginaprincipal/paginaprincipal.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatTableModule } from '@angular/material/table';
+import { TablarComponent } from './tablar/tablar.component'  
+import { MatSortModule } from '@angular/material/sort';
+
 
 @NgModule({
   declarations: [
@@ -28,14 +33,18 @@ import { PaginaprincipalComponent } from './paginaprincipal/paginaprincipal.comp
     IndextrabajadorComponent,
     ContratoComponent,
     MotorbusquedaComponent,
-    PaginaprincipalComponent
+    PaginaprincipalComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatSortModule,
+    MatTableModule,
+    TablarComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

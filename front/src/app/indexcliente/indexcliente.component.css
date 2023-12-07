@@ -76,6 +76,7 @@ h1{
 }
 
 .sec1{
+    background-color: #03223f;
     width: 100%;
     height: 45vh;
     display: flex;
@@ -88,6 +89,11 @@ h1{
     height: 90%;
     border-bottom: 2px solid #03223f;
     border-left: 2px solid #03223f;
+}
+
+app-tablar{
+    width: 100%;
+    height: 45vh;
 }
 
 @font-face {
