@@ -1,0 +1,12 @@
+type Query{
+    getAll:[job]
+}
+    type job{
+        id:ID
+
+        nombre_de_trabajo:String
+
+       cantidad_de_personas:Int
+
+       promedio_de_salario:Float
+}
