@@ -9,6 +9,7 @@ import { RegistroComponent } from './registro/registro.component';
 const routes: Routes = [  
 {path: 'login',component: LoginComponent, canActivate:[LoginGuard]},
 {path: 'register',component: RegistroComponent},
+{path: 'pag',component: IndexclienteComponent},
 {path: '',component: PaginaprincipalComponent},
 {path: '**', redirectTo: '', pathMatch: 'full'}
 ];

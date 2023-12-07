@@ -38,7 +38,7 @@ export class LoginComponent implements OnInit{
         this.isLogged = true;
         this.isLoginFail = false;
         this.tokenservice.setToken(data.token);
-        this.router.navigate(['/']);
+        this.router.navigate(['/pag']);
       },
       error:(err) => {
         this.isLogged = false;

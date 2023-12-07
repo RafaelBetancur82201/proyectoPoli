@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { TokenService } from '../services/token.service.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-indexcliente',
@@ -8,11 +9,11 @@ import { TokenService } from '../services/token.service.service';
 })
 export class IndexclienteComponent {
 
-  constructor(private tokenservise:TokenService){}
+  constructor(private tokenservise:TokenService,private router: Router){}
 
   onLogOut(): void{
     this.tokenservise.logOut();
-    window.location.reload();
+    this.router.navigate(['']);
   }
 
 }
