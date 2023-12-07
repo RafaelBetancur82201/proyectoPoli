@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 const TOKEN_KEY='AuthToken';
+const NAME='Nombre';
 
 @Injectable({
   providedIn: 'root'
@@ -10,8 +11,14 @@ export class TokenService {
   constructor(private router:Router) { }
   
   public setToken(token: string): void {
+    const payload =token.split('.')[1];
+     const payloadDecoude =atob(payload);
+    const values = JSON.parse(payloadDecoude);
+    window.localStorage.removeItem(NAME);
+    window.localStorage.setItem(NAME, values.nombre);
     window.localStorage.removeItem(TOKEN_KEY);
     window.localStorage.setItem(TOKEN_KEY, token);
+    
   }
   public getToken(): string {
     return localStorage.getItem(TOKEN_KEY)!;
